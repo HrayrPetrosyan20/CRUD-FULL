@@ -1,0 +1,18 @@
+﻿@foreach(var i in Model)
+{
+ <p>
+        @i.Name---@i.Year---@i.HorsePower;
+        <form method="post" action="Delete">
+            <button type="submit" name="Id" value="@i.Id">Delete</button>
+        </form>
+           <form method="post"action="Update">
+            <button type="submit" name="Id" value="@i.Id">Update</button>
+            <input type="text" name="Name" placeholder="Enter Name">
+            <input type="number" name="Year" placeholder="Enter Year">
+            <input type="number" name="HorsePower" placeholder="Enter HorsePower">
+        </form> 
+       
+
+</p>
+     
+}
